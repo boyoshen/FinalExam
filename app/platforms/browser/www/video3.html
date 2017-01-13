@@ -1,0 +1,106 @@
+<center>
+<html>
+    <head>
+        <title>video</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="signin.css" rel="stylesheet"> 
+    
+ 
+    </head>
+    <body>
+        <iframe src="https://www.youtube.com/embed/eS2T9IiOYbc"></iframe><br><br>
+        <input class="button blue serif round glass" type="button" value="喜歡" onclick="add()"></input>
+        <input class="button blue serif round glass" type="button" value="不喜歡" onclick="less()"></input><br><br>
+    <div id="a">0
+    </div>
+    <h1>歌詞區</h1>
+    <div class="lyrics col-md-12">
+        作詞：周杰倫&nbsp;&nbsp;&nbsp;作曲：周杰倫<br>
+
+        <br>你聽爸爸的話 說我不是個好東西
+        <br>送給你的花 不配放在你家花瓶裡
+        <br>他要我越走越遠越好
+        <br>不要在一起那最好
+        <br>但我聽媽媽的話
+        <br>要我不能輕易放棄
+        <br>還喜歡的話讓我再追回你求求你
+        <br>難道你要我不孝順嗎
+        <br>這是藉口你應該懂吧
+        <br>
+        <br>你說  誰說  我說  我不愛了
+        <br>胡說  瞎說  我習慣了
+        <br>那煙  和酒  也都戒了
+        <br>證明有多在乎你了
+        <br>
+        <br>光上  一句  我想你懂
+        <br>我真  的不  太會說話
+        <br>你看你  笑了吧
+        <br>你說我  算了吧
+        <br>
+        <br>一個人  的愛情  很簡單
+        <br>兩個人  的相愛  為什麼反而變得很難
+        <br>
+        <br>我受夠我的愛你比較多
+        <br>也受夠你的愛沉默很久
+        <br>承諾太多  多少會錯
+        <br>你寧願難過也不要有結果
+        <br>
+        <br>我受夠我的愛你比較多
+        <br>倒不如回到從前的自由
+        <br>說好放手  誰先開口
+        <br>沒有對錯
+        <br>反正花開了終究會落
+        <br>
+        <br>你說  誰說  我說  我不愛了
+        <br>胡說  瞎說  我習慣了
+        <br>那煙  和酒  也都戒了
+        <br>證明有多在乎你了
+        <br>
+        <br>一個人  的愛情  很簡單
+        <br>兩個人  的相愛  為什麼反而變得很難
+        <br>
+        <br>你聽爸爸的話  說我不是個好東西
+        <br>送給你的花  不配放在你家花瓶裡
+        <br>他要我越走越遠越好
+        <br>不要在一起那最好
+        <br>但我聽媽媽的話
+        <br>要我不能輕易放棄
+        <br>還喜歡的話讓我再追回你求求你
+        <br>難道你要我不孝順嗎
+        <br>這是藉口你應該懂吧
+        <br>
+        <br>我受夠我的愛你比較多
+        <br>也受夠你的愛沉默很久
+        <br>承諾太多  多少會錯
+        <br>你寧願難過也不要有結果
+        <br>
+        <br>我受夠我的愛你比較多
+        <br>倒不如回到從前的自由
+        <br>說好放手  誰先開口
+        <br>沒有對錯
+        <br>反正花開了終究會落
+        <br>
+        <br>難道你要我不孝順嗎
+        <br>這是藉口你應該懂吧
+        <br>
+        <br>        
+                                                        </div>
+    </body>
+<script type="text/javascript">
+    var clicks = 0;
+        var c;
+    function add() {
+        clicks += 1;
+        document.getElementById("a").innerHTML=clicks;
+    };
+    function less()
+        {
+          clicks -=1
+          document.getElementById("a").innerHTML=clicks;
+            
+        };
+    </script>
+</html>
+<input type="button" value="回首頁" onclick="location.href='success.html'">
+</center>

@@ -1,0 +1,87 @@
+<center>
+<html>
+    <head>
+        <title>video</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/signin.css" rel="stylesheet"> 
+    
+ 
+    </head>
+    <body>
+        <iframe src="https://www.youtube.com/embed/kOriLqPD7PI"></iframe><br><br>
+        <input class="button blue serif round glass" type="button" value="喜歡" onclick="add()"></input>
+        <input class="button blue serif round glass" type="button" value="不喜歡" onclick="less()"></input><br><br>
+    <div id="a">0
+    </div>
+    <h1>歌詞區</h1>
+    <div class="lyrics col-md-12">
+        作詞：周杰倫&nbsp;&nbsp;&nbsp;作曲：周杰倫<br>
+                            
+  
+        <br>土耳其冰淇淋  就像是女人的心
+        <br>在你的面前轉來轉去  卻捉摸不定
+        <br>這音樂跳Waacking也可以跳Locking
+        <br>我耍你耍的就像土耳其的冰淇淋
+        <br>
+        <br>幾個高級和弦  幾個切分音
+        <br>我寫的舞曲也可以很有音樂性
+        <br>就像賣個冰  還能秀雜技
+        <br>你最好期許如果你跟我一樣努力
+        <br>
+        <br>換個樂器就像換個兵器
+        <br>電吉它這個時候出來幹嘛（到底？）
+        <br>你猜不透也想不到摸不著頭緒
+        <br>我總是為了什麼出奇不意（到底？）
+        <br>
+        <br>誰說拍中國風  一定要配燈籠
+        <br>誰說寫中國風  一定要商角徵羽宮
+        <br>我乾脆自己下車  指揮樂壇的交通
+        <br>管他管他什麼曲風
+        <br>
+        <br>土耳其冰淇淋  土耳其冰淇淋  土耳其冰淇淋  土耳其冰淇淋
+        <br>
+        <br>加一點  土耳其進行曲  太豐富的編曲
+        <br>吃一口冰淇淋來融化你的傷心
+        <br>仔細聽  幾個半音  有點拉丁  有點熱情
+        <br>那是我想要給的驚喜
+        <br>
+        <br>幾個高級和弦  幾個切分音
+        <br>我寫的舞曲也可以很有音樂性
+        <br>就像賣個冰  還能秀雜技
+        <br>你最好期許如果你跟我一樣努力
+        <br>
+        <br>換個樂器就像換個兵器
+        <br>電吉它這個時候出來幹嘛（到底？）
+        <br>你猜不透也想不到摸不著頭緒
+        <br>我總是為了什麼出奇不意（到底？）
+        <br>
+        <br>誰說拍中國風  一定要配燈籠
+        <br>誰說寫中國風  一定要商角徵羽宮
+        <br>我乾脆自己下車  指揮樂壇的交通
+        <br>管他管他什麼曲風
+        <br>
+        <br>土耳其冰淇淋  土耳其冰淇淋  土耳其冰淇淋  土耳其冰淇淋
+        <br>
+        <br>土耳其冰淇淋  土耳其冰淇淋  土耳其冰淇淋  土耳其冰淇淋
+        <br>
+        <br>
+        </div>
+    </body>
+<script type="text/javascript">
+    var clicks = 0;
+        var c;
+    function add() {
+        clicks += 1;
+        document.getElementById("a").innerHTML=clicks;
+    };
+    function less()
+        {
+          clicks -=1
+          document.getElementById("a").innerHTML=clicks;
+            
+        };
+    </script>
+</html>
+<input type="button" value="回首頁" onclick="location.href='success.html'">
+</center>

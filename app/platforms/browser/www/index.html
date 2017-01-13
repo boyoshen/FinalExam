@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW" >
+    <center>
+    <head>     
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/signin.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+<center>
+    <br>
+            <span title="Login System" style="font-size:2.9rem;font-family: 'Gloria Hallelujah', cursive;">music player</span><br><br><br>
+    <img src="1.PNG">
+       <div id="login-content">
+<!--     <form style="width:100%;margin:0 auto;">-->
+         <div style="margin:0 auto;text-align:center;"><label for="user_login"><input class=textuse id="id" type="text"  size="30" name="id" value="" onblur="if(this.value=='') this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue) this.value=''" placeholder="Username"></label></div>
+         <div style="margin:0 auto;text-align:center;"><label for="user_password"><input class=textuse id="password" type="password" size="28" name="password" value="" onblur="if(this.value=='') this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue) this.value=''" placeholder="Password"></label></div>
+<input id="signup" onclick="signup()" class="button blue serif round glass" type="submit" name="button" value="    登入    " /><br>
+         
+<!--         <button onclick="signup()">登入</button>-->
+
+<!--</form>-->
+<form name="form" method="post" action="addmember.html">  
+    <input class="button blue serif round glass" type="submit" name="button" value="會員註冊" />
+</form>
+
+           <script>
+        var a = 0;
+        function signup(){
+         $(document).ready(function(){
+          $.getJSON("http://120.108.111.157/~103021017/loginjson.php",function(result){
+                   $.each(result, function(i,field){                
+         
+                        var id = document.getElementById("id").value;
+                        var password = document.getElementById("password").value;
+                               while(a>=0){
+                                    if(id == field.id && password == field.password){
+//                                        alert("userInput : "+id+" ,"+password);
+//                                        alert(field.id+", "+field.password);
+                                        document.location.href="success.html";
+//                                        a=-1;
+                                        break;
+                                    }else{
+//                                       a=a+1;
+//                                       alert("帳號或密碼錯誤");
+                                       break;
+                                   }
+                               }
+        });
+    });
+ });
+        }
+    </script>
+</body>
+    </center>

@@ -1,0 +1,165 @@
+<center>
+<!--<?php session_start(); ?>-->
+<!DOCTYPE hmtl>
+<html >
+    
+<!--
+    <?php
+    if($_SESSION['id'] != null)
+{       
+       
+}
+else
+{
+        echo '<meta http-equiv=REFRESH CONTENT=0;url=index.html>';
+}
+    ?>
+-->
+    <head>    
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="signin.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>music player</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+
+    
+    
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0px ;
+    }
+
+    .slick-slide {
+      margin: 25px 1px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+      
+slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    
+  </style>
+</head>
+<body>
+    
+    <div class="bg">
+        <br>
+            <form name="form" method="post" action="searchvideo.html">
+            <input class=textuse2 name="songid" onblur="if(this.value=='') this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue) this.value=''" placeholder="搜尋歌曲">
+            <button type="submit" name="button"><img src="img/123.png" height="20px" width="20px"></button>
+
+            </form>
+        <form action="logout.php" >
+            <div style="text-align:right;">
+                <button>登出</button>
+            </div>
+                </form>
+        </form>
+        </div>
+        </center><br>
+        <font face="DFKai-sb" size="6">熱門排行榜</font><hr class="hr3" />
+      
+
+  
+
+  <section class="center slider">
+     <form name="form" method="post" action="video.html">
+    <div>
+      <button name="button" ><img src="img/3.jpg" width="170" height="100"><br>土耳其冰淇淋</button>
+    </div>
+      </form>
+      <form name="form" method="post" action="video2.html">
+    <div>
+      <button ><img src="img/4.jpg" width="170" height="100"><br>告白氣球</button>
+    </div>
+      </form>
+      <form name="form" method="post" action="video3.html">
+    <div>
+       <button><img src="img/5.jpg" width="170" height="100"><br>聽爸爸的話</button>
+    </div>
+      </form>
+      <form name="form" method="post" action="video4.html">
+    <div>
+      <button><img src="img/6.jpg" width="170" height="100"><br>算什麼男人</button>
+    </div>
+      </form>
+<!--
+    <div>
+      <img src="http://placehold.it/350x300?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=6">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=7">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=8">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=9">
+    </div>
+-->
+  </section>
+ 
+    
+    <div>
+        <font face="DFKai-sb" size="6">歌手專輯</font><hr class="hr3" />
+         <form name="form" method="post" action="album.html">
+        <button><img src="img/2.jpg" width="170" height="100"><br>床邊故事</button>
+        </form>
+         <form name="form" method="post" action="album2.html">
+        <button><img src="img/1.jpg" width="170" height="100"><br>哎呦，不錯哦</button>
+        <br>
+        </form>
+    
+    
+        <div>
+        <font face="DFKai-sb" size="6">我的收藏</font><hr class="hr3" />
+        <button><img src="" width="170" height="100"></button>
+        <button><img src="" width="170" height="100"></button>
+        <button><img src="" width="170" height="100"></button>
+        <button><img src="" width="170" height="100"></button>
+        </div>
+    
+    
+    
+    
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="css/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() { 
+      $(".center").slick({
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+    });
+  </script>
+
+</body>
+</html>
